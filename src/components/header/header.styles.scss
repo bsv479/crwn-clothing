@@ -10,6 +10,10 @@
     height: 100%;
     width: 70px;
     padding: 25px;
+
+    &:hover {
+      filter: invert(0.5);
+    }
   }
 
   .options {
@@ -22,6 +26,10 @@
     .option {
       padding: 10px 15px;
       cursor: pointer;
+
+      &:hover {
+        font-weight: bold;
+      }
     }
   }
 }
