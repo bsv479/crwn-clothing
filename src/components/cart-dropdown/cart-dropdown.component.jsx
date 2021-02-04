@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import CustomButton from "../cuatom-button/custom-button.component";
+import CustomButton from "../custom-button/custom-button.component";
 import CartItem from "../cart-item/cart-item.component";
 import {selectCartItems} from "../../redux/cart/cart.selectors";
 import {createStructuredSelector} from "reselect";

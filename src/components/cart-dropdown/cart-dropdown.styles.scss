@@ -25,5 +25,9 @@
 
   button {
     margin-top: auto;
+
+    &:focus {
+      outline: none;
+    }
   }
 }

@@ -16,10 +16,15 @@
       height: 100%;
     }
   }
+
   .name,
   .quantity,
   .price {
     width: 23%;
+  }
+
+  .name {
+    display: block;
   }
 
   .quantity {
