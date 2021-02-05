@@ -8,7 +8,7 @@ const AllCategoryItems = ({categoryItems}) => {
   return (
     <div className='all-category'>
       {
-        categoryItems.map(item => <CollectionItem item={item}/>)
+        categoryItems.map(item => <CollectionItem id={item.id} item={item}/>)
       }
     </div>
   )

@@ -10,7 +10,7 @@ const CategoryPage = ({categoryData}) => {
   console.log(categoryData);
   return (
     <div className="category-page">
-      <h1>{categoryData.routeName.toUpperCase()}</h1>
+      <h1>{categoryData.title.toUpperCase()}</h1>
       <AllCategoryItems categoryItems={categoryData.items}/>
     </div>
   );

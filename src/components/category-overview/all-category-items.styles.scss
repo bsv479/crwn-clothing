@@ -1,10 +1,10 @@
 .all-category {
   display: grid;
-  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   grid-column-gap: 15px;
   grid-row-gap: 25px;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 
   .collection-item {
     width: 100%;
