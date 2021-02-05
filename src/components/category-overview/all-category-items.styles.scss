@@ -1,0 +1,12 @@
+.all-category {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-column-gap: 15px;
+  grid-row-gap: 25px;
+  justify-content: center;
+  align-content: center;
+
+  .collection-item {
+    width: 100%;
+  }
+}
