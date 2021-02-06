@@ -13,6 +13,7 @@
     justify-content: space-between;
     border-bottom: 1px solid darkgrey;
     font-size: 21px;
+    color: #4785a0;
 
     .header-block {
       text-transform: capitalize;
@@ -28,5 +29,16 @@
     margin-top: 30px;
     margin-left: auto;
     font-size: 36px;
+  }
+
+  .test-warning {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 23px;
+    color: darkred;
+  }
+
+  button {
+    margin-top: 20px;
   }
 }

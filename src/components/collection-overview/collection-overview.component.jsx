@@ -6,7 +6,6 @@ import {connect} from "react-redux";
 import "./collection-overview.styles.scss"
 
 const CollectionsOverview = ({collections}) => {
-  console.log(collections);
   return (
     <div className='collection-overview'>
       {
