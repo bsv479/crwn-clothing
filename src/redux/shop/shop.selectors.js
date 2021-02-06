@@ -12,6 +12,11 @@ export const selectCollections = createSelector(
 
 export const selectCollection = memoize(categoryName => createSelector(
   [selectCollections],
-  (collections) => collections.find(
-    collection => collection.routeName === categoryName)
+  (collections) => collections[categoryName]
 ));
+
+
+export const selectCollectionForPreview = createSelector(
+  [selectCollections],
+  collections => Object.keys(collections).map(key => collections[key])
+);
