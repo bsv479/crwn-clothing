@@ -11,8 +11,8 @@ import Header from './components/header/header.component';
 import SignInAndUpPage from './pages/sign-in-and-up/sign-in-and-up.component';
 import {setCurrentUser} from "./redux/user/user.actions";
 
-import './App.css';
 import {selectCurrentUser} from "./redux/user/user.selectors";
+import './App.css';
 import Contact from "./pages/contacts/contact.component";
 
 

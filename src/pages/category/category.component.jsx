@@ -7,7 +7,6 @@ import {connect} from "react-redux";
 
 
 const CategoryPage = ({categoryData}) => {
-  console.log(categoryData);
   return (
     <div className="category-page">
       <h1>{categoryData.title.toUpperCase()}</h1>
