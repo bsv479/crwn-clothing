@@ -4,7 +4,6 @@ import './collection-preview.styles.scss';
 import {Link, withRouter} from "react-router-dom";
 
 const CollectionPreview = ({title, routeName, items, match}) => {
-  console.log(match.url);
   return (
     <div className='collection-preview'>
       <Link className='title'
