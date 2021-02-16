@@ -13,7 +13,7 @@ import {setCurrentUser} from "./redux/user/user.actions";
 
 import {selectCurrentUser} from "./redux/user/user.selectors";
 import './App.css';
-import Contact from "./pages/contacts/contact.component";
+import Contacts from "./pages/contacts/contacts.component";
 
 
 
@@ -53,7 +53,7 @@ class App extends React.Component {
           <Route exact path='/' component={HomePage}/>
           <Route path='/shop' component={ShopPage}/>
           <Route exact path='/checkout' component={CheckoutPage}/>
-          <Route exact path='/contact' component={Contact}/>
+          <Route exact path='/contacts' component={Contacts}/>
           <Route exact path='/signin' render={() =>
             this.props.currentUser ? (<Redirect to='/'/>) : <SignInAndUpPage/>} />
         </Switch>
