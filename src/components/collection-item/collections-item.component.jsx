@@ -1,20 +1,25 @@
 import React from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import CustomButton from "../custom-button/custom-button.component";
-import {addItem} from "../../redux/cart/cart.actions";
-
+import { addItem } from "../../redux/cart/cart.actions";
+import { Link, withRouter } from "react-router-dom";
 import './collection-item.styles.scss';
 
 
-const CollectionItem = ({ item, addItem }) => {
-  const {imageUrl, name, price} = item;
+const CollectionItem = ({ item, addItem, itemLink, ...otherProps }) => {
+  const { imageUrl, name, price } = item;
+
+  console.log('otherProps', otherProps);
   return (
     <div className='collection-item'>
-      <div className='image'
-           style={{
-             backgroundImage: `url(${imageUrl})`
-           }}
-      />
+      <Link to={`${itemLink}/${item.id}`} 
+        className='image'
+        style={{
+          backgroundImage: `url(${imageUrl})`
+        }}>
+      </Link>
+
+
       <div className='collection-footer'>
         <span className='name'>{name}</span>
         <span className='price'>${price}</span>
@@ -31,4 +36,4 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 
-export default connect(null, mapDispatchToProps)(CollectionItem);
+export default withRouter(connect(null, mapDispatchToProps)(CollectionItem));
