@@ -14,16 +14,10 @@ const Contacts = () => {
       <h1>Contacts</h1>
       <div className="contact-info">
         <div className="address-description">
-          <div>Street:</div>
-          <div>City:</div>
-          <div>Email:</div>
-          <div>Phone:</div>
-        </div>
-        <div className="address-info">
-          <div>3147  Doctors Drive</div>
-          <div>90017 Los Angeles (USA)</div>
-          <div>r3wl0id838@temporary-mail.net</div>
-          <div>+310-341-3762</div>
+          <div>Street: 1600 Amphitheatre Pkwy</div>
+          <div>City: Mountain View, CA 94043</div>
+          <div>Email: r3wl0id838@temporary-mail.net</div>
+          <div>Phone: +310-341-3762</div>
         </div>
       </div>
 

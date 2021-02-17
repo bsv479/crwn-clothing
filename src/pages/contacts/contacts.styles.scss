@@ -4,10 +4,10 @@
 
 .contact-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   font-size: 18px;
 }
 
-.address-info {
+.address-description {
   text-align: right;
 }

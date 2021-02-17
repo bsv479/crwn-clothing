@@ -7,33 +7,7 @@ import CustomButton from "../custom-button/custom-button.component";
 import {addItem} from "../../redux/cart/cart.actions";
 
 
-class CartItemInfo extends React.Component {
-  // state = {
-  //   categoryTitle: '',
-  //   itemToShow: {}
-  // };
-
-  // componentDidMount() {
-  //   this.updateDataInState();
-  // }
-  //
-  // updateDataInState(){
-  //   const {categoryData, match} = this.props;
-  //
-  //   if (match.params && categoryData) {
-  //     const itemId = Number(match.params.itemId);
-  //     const itemToShow = categoryData.items.find(item => item.id === itemId);
-  //     if (itemToShow !== this.state.itemToShow) {
-  //       this.setState({
-  //         categoryTitle: categoryData.title,
-  //         itemToShow
-  //       });
-  //     }
-  //   }
-  // }
-
-  render() {
-    const {addItem, categoryData, match} = this.props;
+const CartItemInfo = ({addItem, categoryData, match}) => {
     const itemId = Number(match.params.itemId);
     const itemToShow = categoryData.items.find(item => item.id === itemId);
 
@@ -67,8 +41,7 @@ class CartItemInfo extends React.Component {
 
       </div>
     ) : (<h3 style={{textAlign: "center"}}>Item not found.</h3>)
-  }
-}
+};
 
 const mapStateToProps = (state, ownProps) => ({
   categoryData: selectCollection(ownProps.match.params.categoryName)(state)
