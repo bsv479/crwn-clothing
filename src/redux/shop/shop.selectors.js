@@ -21,7 +21,19 @@ export const selectCollectionForPreview = createSelector(
   collections => collections ? Object.keys(collections).map(key => collections[key]) : []
 );
 
-// export const selectItem = createSelector(
+export const selectIsCollectionFetching = createSelector(
+  [selectShop],
+  shop => shop.isFetching
+);
+
+export const selectIsCollectionLoaded = createSelector(
+  [selectCollections],
+  collections => !!collections
+);
+
+
+// export const selectItem = itemId => createSelector(
 //     [selectCollection],
-//     collection => collection ? collection.find((item) => item,)
+//     collection => collection ?
+//       collection.find((item) => item.id === itemId) : []
 // );

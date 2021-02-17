@@ -9,7 +9,6 @@ import './collection-item.styles.scss';
 const CollectionItem = ({ item, addItem, itemLink, ...otherProps }) => {
   const { imageUrl, name, price } = item;
 
-  console.log('otherProps', otherProps);
   return (
     <div className='collection-item'>
       <Link to={`${itemLink}/${item.id}`} 

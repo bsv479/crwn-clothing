@@ -8,32 +8,39 @@ import {addItem} from "../../redux/cart/cart.actions";
 
 
 class CartItemInfo extends React.Component {
-  state = {
-    categoryTitle: '',
-    itemToShow: {}
-  };
+  // state = {
+  //   categoryTitle: '',
+  //   itemToShow: {}
+  // };
 
+  // componentDidMount() {
+  //   this.updateDataInState();
+  // }
+  //
+  // updateDataInState(){
+  //   const {categoryData, match} = this.props;
+  //
+  //   if (match.params && categoryData) {
+  //     const itemId = Number(match.params.itemId);
+  //     const itemToShow = categoryData.items.find(item => item.id === itemId);
+  //     if (itemToShow !== this.state.itemToShow) {
+  //       this.setState({
+  //         categoryTitle: categoryData.title,
+  //         itemToShow
+  //       });
+  //     }
+  //   }
+  // }
 
   render() {
-    const {categoryData, addItem, match, history} = this.props;
-
-    if (match.params && categoryData) {
-      const itemId = Number(match.params.itemId);
-      const itemToShow = categoryData.items.find(item => item.id === itemId);
-      if (itemToShow !== this.state.itemToShow) {
-        this.setState({
-          categoryTitle: categoryData.title,
-          itemToShow
-        });
-      }
-    }
-
-    const {itemToShow, categoryTitle} = this.state;
+    const {addItem, categoryData, match} = this.props;
+    const itemId = Number(match.params.itemId);
+    const itemToShow = categoryData.items.find(item => item.id === itemId);
 
     return itemToShow ? (
       <div className='item-info'>
-        <Link to={`/shop/${categoryTitle.toLowerCase()}`} >
-          <h4>See all {categoryTitle} Category</h4>
+        <Link to={`/shop/${categoryData.title.toLowerCase()}`} >
+          <h4>See all {categoryData.title}</h4>
         </Link>
         <div className='item-container'>
           <div className='img-side'>
