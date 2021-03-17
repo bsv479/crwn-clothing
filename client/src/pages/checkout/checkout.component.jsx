@@ -39,7 +39,10 @@ const CheckoutPage = ({cartItems, total}) => (
     <StripeCheckoutButton price={total}/>
 
     <div className='test-warning'>
-      <a href="https://stripe.com/docs/testing#cards" target="_blank"><u>* Please use following test credit card *</u></a>
+      <a href="https://stripe.com/docs/testing#cards" 
+        target="_blank" rel="noreferrer">
+        <u>* Please use following test credit card *</u>
+      </a>
     </div>
   </div>
 );
