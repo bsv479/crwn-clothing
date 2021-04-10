@@ -14,7 +14,7 @@ const CartItemInfo = ({addItem, categoryData, match}) => {
     return itemToShow ? (
       <div className='item-info'>
         <Link to={`/shop/${categoryData.title.toLowerCase()}`} >
-          <h4>See all {categoryData.title}</h4>
+          <h4 style={{marginLeft: '15px'}}>See all {categoryData.title}</h4>
         </Link>
         <div className='item-container'>
           <div className='img-side'>

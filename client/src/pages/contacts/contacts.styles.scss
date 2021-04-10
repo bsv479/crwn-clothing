@@ -1,5 +1,9 @@
 .contacts {
   padding: 10px 40px;
+
+  @media screen and (max-width: 600px) {
+    padding: 10px 10px;
+  }
 }
 
 .contact-info {

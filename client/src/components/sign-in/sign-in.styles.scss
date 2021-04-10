@@ -9,7 +9,16 @@
 
   .buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 600px) {
+      justify-content: center;
+    }
   }
 
+  @media screen and (max-width: 960px) {
+    width: 70%;
+    margin: 25px auto;
+  }
 }
