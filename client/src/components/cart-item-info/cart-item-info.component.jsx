@@ -32,7 +32,7 @@ const CartItemInfo = ({ addItem, categoryData, match }) => {
             Sed posuere sed ligula eget porttitor. Duis tincidunt rutrum dolor,
             non varius nulla suscipit sit amet. Morbi eget vulputate mauris.
             </div>
-          <div class='btn-container'>
+          <div className='btn-container'>
             <CustomButton onClick={() => addItem(itemToShow)} inverted>
               Add to cart
             </CustomButton>
