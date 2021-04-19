@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 19px;
     padding: 40px 30px;
 
     @media screen and (max-width: 800px) {
