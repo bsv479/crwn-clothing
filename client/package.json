@@ -12,16 +12,18 @@
     "@types/react": "^17.0.1",
     "@types/react-dom": "^17.0.0",
     "axios": "^0.21.1",
+    "enzyme": "^3.11.0",
     "firebase": "^8.2.1",
     "google-map-react": "^2.1.9",
     "lodash.memoize": "^4.1.2",
     "node-sass": "4.14.1",
-    "react": "^17.0.1",
+    "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-redux": "^7.2.3",
+    "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-stripe-checkout": "^2.6.3",
+    "react-test-renderer": "^17.0.2",
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",
@@ -67,5 +69,8 @@
       "last 3 firefox version",
       "last 3 safari version"
     ]
+  },
+  "devDependencies": {
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.1"
   }
 }

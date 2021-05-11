@@ -7,7 +7,7 @@ import CartItemInfoContainer from "../../components/cart-item-info/cart-item-inf
 import {fetchCollectionsStart} from "../../redux/shop/shop.actions";
 
 
-const ShopPage = ({fetchCollectionsStart, match}) => {
+export const ShopPage = ({fetchCollectionsStart, match}) => {
 
   useEffect(() => {
     fetchCollectionsStart();

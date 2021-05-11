@@ -6,12 +6,12 @@ import { Link, withRouter } from "react-router-dom";
 import './collection-item.styles.scss';
 
 
-const CollectionItem = ({ item, addItem, itemLink, ...otherProps }) => {
+export const CollectionItem = ({ item, addItem, itemLink }) => {
   const { imageUrl, name, price } = item;
 
   return (
     <div className='collection-item'>
-      <Link to={`${itemLink}/${item.id}`} 
+      <Link to={`${itemLink}/${item.id}`}
         className='image'
         style={{
           backgroundImage: `url(${imageUrl})`
@@ -21,7 +21,7 @@ const CollectionItem = ({ item, addItem, itemLink, ...otherProps }) => {
 
       <div className='collection-footer'>
         <span className='name'>{name}</span>
-        <span className='price'>${price}</span>
+        <span className='price'>{price}$</span>
       </div>
       <CustomButton onClick={() => addItem(item)} inverted>
         Add to cart

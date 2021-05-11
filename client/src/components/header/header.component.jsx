@@ -11,7 +11,7 @@ import {selectCurrentUser} from "../../redux/user/user.selectors";
 import {signOutStart} from "../../redux/user/user.actions";
 
 
-const Header = ({currentUser, hidden, signOutStart}) => (
+export const Header = ({currentUser, hidden, signOutStart}) => (
   <div className='header'>
     <Link className='logo-container' to='/'>
       <Logo className='logo'/>

@@ -6,7 +6,7 @@ import { withRouter } from 'react-router-dom';
 import "./all-category-items.styles.scss";
 
 
-const AllCategoryItems = ({ categoryItems, match }) => {
+export const AllCategoryItems = ({ categoryItems, match }) => {
   return (
     <div className='all-category'>
       {
