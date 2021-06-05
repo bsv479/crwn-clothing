@@ -41,6 +41,7 @@ const App = ({ currentUser, checkUserSession }) => {
                 currentUser ? <Redirect to="/" /> : <SignInAndUpPage />
               }
             />
+            <Redirect to='/'/>
           </Suspense>
         </ErrorBoundary>
       </Switch>
